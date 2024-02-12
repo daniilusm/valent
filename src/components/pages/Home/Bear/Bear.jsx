@@ -90,14 +90,6 @@ const Bear = (props) => {
             material={materials.tex_u1_v1}
           />
         </group>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.floor__0.geometry}
-          material={materials.floor__0}
-          position={[0, -56.158, 0]}
-          rotation={[-Math.PI / 2, 0, 0]}
-        />
       </group>
     </group>
   );

@@ -1,0 +1,72 @@
+/** @format */
+
+$black: #000000;
+$white: #ffffff;
+$softGrey: #efefef;
+
+.wrapper {
+  position: relative;
+}
+
+.root {
+  text-align: center;
+  width: 100%;
+  padding: size(10) 0;
+  border: size(1) solid rgba($softGrey, 0.4);
+  border-radius: size(26);
+
+  color: $softGrey;
+  outline: none;
+  transition: border 0.3s ease;
+
+  @include tablet {
+    padding: size(7) 0;
+  }
+
+  @include mobile {
+    padding: size(10) size(20);
+    text-align: left;
+  }
+
+  &::placeholder {
+    color: rgba($softGrey, 0.4);
+    transition: color 0.3s ease;
+
+    @include tablet {
+      font-size: size(12);
+    }
+  }
+
+  @include hover {
+    border: size(1) solid $softGrey;
+
+    &::placeholder {
+      color: $softGrey;
+    }
+  }
+}
+
+.fillBorder {
+  border: size(1) solid $softGrey;
+}
+
+.darkInput {
+  border: size(1) solid $black;
+  color: $black;
+
+  &::placeholder {
+    color: rgba($black, 0.3);
+  }
+
+  @include hover {
+    border: size(1) solid $black;
+
+    &::placeholder {
+      color: $black;
+    }
+  }
+
+  @include tablet {
+    padding: size(10);
+  }
+}

@@ -1,0 +1,31 @@
+/** @format */
+
+// @use '~styles/helpers' as *;
+// @use '~styles/colors' as *;
+// @use '~styles/mixins' as *;
+// @use '~styles/text' as *;
+
+// .root {
+//   position: absolute;
+//   left: size(30);
+//   bottom: size(-15);
+
+//   @include hal-grotesk-font(medium);
+
+//   font-size: size(12);
+//   text-transform: uppercase;
+//   color: $red;
+
+//   @include tablet {
+//     bottom: size(-8);
+//     font-size: size(7);
+//   }
+
+//   @include mobile {
+//     bottom: size(4);
+//   }
+// }
+
+// .blackText {
+//   color: $black;
+// }
